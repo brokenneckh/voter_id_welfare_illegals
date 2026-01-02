@@ -1,0 +1,52 @@
+state,abbrev,no_id_voting,health,food,cash,eitc,id_strictness
+Alabama,AL,0,0,0,0,0,3
+Alaska,AK,0,0,0,0,0,4
+Arizona,AZ,0,0,0,0,0,2
+Arkansas,AR,0,0,0,0,0,1
+California,CA,1,1,1,1,1,5
+Colorado,CO,0,1,0,0,1,4
+Connecticut,CT,0,0,0,1,0,4
+Delaware,DE,0,0,0,0,0,4
+Florida,FL,0,0,0,0,0,3
+Georgia,GA,0,0,0,1,0,1
+Hawaii,HI,1,0,0,1,0,5
+Idaho,ID,0,0,0,0,0,3
+Illinois,IL,1,1,1,1,1,5
+Indiana,IN,0,0,0,0,0,1
+Iowa,IA,0,0,0,1,0,4
+Kansas,KS,0,0,0,0,0,1
+Kentucky,KY,0,0,0,0,0,3
+Louisiana,LA,0,0,0,0,0,3
+Maine,ME,1,0,1,1,1,5
+Maryland,MD,1,0,0,1,1,5
+Massachusetts,MA,1,0,0,1,0,5
+Michigan,MI,0,0,0,0,0,3
+Minnesota,MN,1,1,1,1,1,5
+Mississippi,MS,0,0,0,0,0,1
+Missouri,MO,0,0,0,0,0,3
+Montana,MT,0,0,0,0,0,3
+Nebraska,NE,0,0,0,0,0,3
+Nevada,NV,1,0,0,1,0,5
+New Hampshire,NH,0,0,0,0,0,1
+New Jersey,NJ,1,0,0,1,0,5
+New Mexico,NM,1,0,0,1,1,5
+New York,NY,1,1,0,1,0,5
+North Carolina,NC,0,0,0,0,0,1
+North Dakota,ND,0,0,0,0,0,1
+Ohio,OH,0,0,0,1,0,1
+Oklahoma,OK,0,0,0,0,0,4
+Oregon,OR,1,1,0,1,1,5
+Pennsylvania,PA,1,0,0,1,0,5
+Rhode Island,RI,0,0,0,1,0,3
+South Carolina,SC,0,0,0,0,0,3
+South Dakota,SD,0,0,0,0,0,3
+Tennessee,TN,0,0,0,1,0,1
+Texas,TX,0,0,0,0,0,3
+Utah,UT,0,0,0,1,0,4
+Vermont,VT,1,0,0,0,1,5
+Virginia,VA,0,0,0,0,0,4
+Washington,WA,0,1,1,1,1,4
+West Virginia,WV,0,0,0,0,0,3
+Wisconsin,WI,0,0,0,1,0,1
+Wyoming,WY,0,0,0,1,0,2
+District of Columbia,DC,1,1,0,0,1,5

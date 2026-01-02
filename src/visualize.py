@@ -52,7 +52,7 @@ def create_comparison_chart(df: pd.DataFrame, output_path: Optional[Path] = None
 
     # Prepare data for plotting
     benefits = ['Health', 'Food', 'Cash', 'Eitc']
-    benefit_labels = ['Healthcare\n(undoc adults)', 'Food\nAssistance', 'Cash\nAssistance', 'EITC\n(ITIN filers)']
+    benefit_labels = ['Healthcare\n(for illegals)', 'Food Assistance\n(for illegals)', 'Cash Assistance\n(for illegals)', 'EITC\n(for illegals)']
 
     x = np.arange(len(benefits))
     width = 0.35
@@ -104,12 +104,12 @@ def create_comparison_chart(df: pd.DataFrame, output_path: Optional[Path] = None
 
     # Title with narrative framing
     ax.set_title(
-        f'States Without Voter ID Requirements Offer {multiplier:.1f}x More Welfare Benefits',
+        f'States Without Voter ID Offer {multiplier:.1f}x More Welfare Benefits to Illegal Immigrants',
         fontsize=16, fontweight='bold', pad=20
     )
 
     # Subtitle
-    fig.text(0.5, 0.91, 'Percentage of states in each group offering expanded benefits to immigrants',
+    fig.text(0.5, 0.91, 'Percentage of states offering state-funded benefits to illegal immigrants',
              ha='center', fontsize=11, color='#666666')
 
     # Source footnote
@@ -180,11 +180,11 @@ def create_strip_plot(df: pd.DataFrame, output_path: Optional[Path] = None) -> g
 
     fig.update_layout(
         title=dict(
-            text='Distribution of States by Welfare Score and Voter ID Policy',
+            text='Distribution of States by Welfare Benefits for Illegal Immigrants and Voter ID Policy',
             font=dict(size=16)
         ),
         xaxis=dict(
-            title='Welfare Score (Number of Benefits Offered: 0-4)',
+            title='Welfare Score (Number of Benefits for Illegals: 0-4)',
             tickmode='array',
             tickvals=[0, 1, 2, 3, 4],
             range=[-0.5, 4.5],
@@ -249,7 +249,7 @@ def create_choropleth_map(df: pd.DataFrame, output_path: Optional[Path] = None) 
     df_plot['hover_text'] = df_plot.apply(
         lambda r: f"<b>{r['state']}</b><br>" +
                   f"Voter ID: {'No ID Required' if r['no_effective_id'] else 'ID Required'}<br>" +
-                  f"Welfare Benefits: {r['welfare_score']}/4<br>" +
+                  f"Welfare Benefits for Illegals: {r['welfare_score']}/4<br>" +
                   f"---<br>" +
                   f"Healthcare: {'✓' if r['health'] else '✗'}<br>" +
                   f"Food: {'✓' if r['food'] else '✗'}<br>" +
@@ -316,8 +316,8 @@ def create_choropleth_map(df: pd.DataFrame, output_path: Optional[Path] = None) 
 
     fig.update_layout(
         title=dict(
-            text=f'Voter ID Requirements & Welfare Benefits by State<br>' +
-                 f'<sub>Blue states (No ID Required) average {no_id_avg:.1f} benefits vs {id_req_avg:.1f} in gray states</sub>',
+            text=f'Voter ID Requirements & Welfare Benefits for Illegal Immigrants by State<br>' +
+                 f'<sub>Blue states (No ID Required) average {no_id_avg:.1f} benefits for illegals vs {id_req_avg:.1f} in gray states</sub>',
             font=dict(size=16),
             x=0.5
         ),
@@ -516,7 +516,7 @@ def create_static_map(df: pd.DataFrame, output_path: Optional[Path] = None) -> p
     ]
     legend2 = ax.legend(handles=welfare_elements, loc='lower left', fontsize=10,
                         frameon=True, fancybox=True, shadow=True, framealpha=0.95,
-                        title='Welfare Benefits', title_fontsize=11,
+                        title='Benefits for Illegals', title_fontsize=11,
                         bbox_to_anchor=(0.33, 0.01), handletextpad=0.5)
     legend2.get_frame().set_facecolor('white')
     legend2.get_frame().set_edgecolor('#cccccc')
@@ -698,7 +698,7 @@ def create_static_map_3tier(df: pd.DataFrame, output_path: Optional[Path] = None
     ]
     legend2 = ax.legend(handles=welfare_elements, loc='lower left', fontsize=10,
                         frameon=True, fancybox=True, shadow=True, framealpha=0.95,
-                        title='Welfare Benefits', title_fontsize=11,
+                        title='Benefits for Illegals', title_fontsize=11,
                         bbox_to_anchor=(0.29, 0.01), handletextpad=0.5)
     legend2.get_frame().set_facecolor('white')
     legend2.get_frame().set_edgecolor('#cccccc')
@@ -856,7 +856,7 @@ def create_static_map_2tier(df: pd.DataFrame, output_path: Optional[Path] = None
     ]
     legend2 = ax.legend(handles=welfare_elements, loc='lower left', fontsize=10,
                         frameon=True, fancybox=True, shadow=True, framealpha=0.95,
-                        title='Welfare Benefits', title_fontsize=11,
+                        title='Benefits for Illegals', title_fontsize=11,
                         bbox_to_anchor=(0.29, 0.01), handletextpad=0.5)
     legend2.get_frame().set_facecolor('white')
     legend2.get_frame().set_edgecolor('#cccccc')

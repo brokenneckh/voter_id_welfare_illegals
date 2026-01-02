@@ -133,19 +133,22 @@ def generate_narrative(df: pd.DataFrame) -> str:
     id_req_avg_benefits = df[df['no_effective_id'] == 0]['welfare_score'].mean()
     overall_multiplier = no_id_avg_benefits / id_req_avg_benefits if id_req_avg_benefits > 0 else float('inf')
 
-    narrative = f"""VOTER ID LAWS AND WELFARE BENEFITS: KEY FINDINGS
+    narrative = f"""VOTER ID LAWS AND WELFARE BENEFITS FOR ILLEGAL IMMIGRANTS: KEY FINDINGS
 {'=' * 55}
 
+NOTE: All welfare benefits analyzed here are STATE-FUNDED programs that extend
+eligibility to illegal immigrants. Federal programs exclude them by law.
+
 SAMPLE SIZE
-- States without voter ID requirement: {no_id_count}
+- States without effective voter ID requirement: {no_id_count}
 - States with voter ID requirement: {id_req_count}
 
 HEADLINE FINDING
 States that allow voting without ID offer an average of {no_id_avg_benefits:.1f} welfare
-benefits, compared to {id_req_avg_benefits:.1f} in states requiring voter ID.
+benefits to illegal immigrants, compared to {id_req_avg_benefits:.1f} in states requiring voter ID.
 This represents a {overall_multiplier:.1f}x difference.
 
-BENEFIT-BY-BENEFIT COMPARISON
+BENEFIT-BY-BENEFIT COMPARISON (all benefits for illegal immigrants)
 """
 
     for benefit in ['health', 'food', 'cash', 'eitc']:
@@ -156,10 +159,10 @@ BENEFIT-BY-BENEFIT COMPARISON
         sig = "**" if p < 0.01 else "*" if p < 0.05 else ""
 
         benefit_label = {
-            'health': 'Healthcare (undoc adults)',
-            'food': 'Food assistance',
-            'cash': 'Cash assistance',
-            'eitc': 'EITC (ITIN filers)'
+            'health': 'Healthcare for illegal immigrants',
+            'food': 'Food assistance for illegal immigrants',
+            'cash': 'Cash assistance for illegal immigrants',
+            'eitc': 'EITC for illegal immigrants (ITIN filers)'
         }[benefit]
 
         narrative += f"\n{benefit_label}:\n"
@@ -185,7 +188,7 @@ STATISTICAL NOTES
 {'=' * 55}
 
 The NCSL categorizes voter ID laws into 5 tiers of strictness.
-Analyzing welfare benefits across this spectrum reveals a clear gradient:
+Analyzing welfare benefits for illegal immigrants across this spectrum reveals a clear gradient:
 
 """
         narrative += f"{'Tier':<5} {'Category':<28} {'States':<6} {'Avg Welfare':<12}\n"
@@ -204,24 +207,24 @@ Analyzing welfare benefits across this spectrum reveals a clear gradient:
 
         narrative += """
 KEY INSIGHT: The gradient is clear - as voter ID requirements become less strict,
-welfare benefits increase. States with the strictest ID laws (Tier 1) average
-the fewest benefits, while states with no document required (Tier 5) average
-the most.
+welfare benefits for illegal immigrants increase. States with the strictest ID laws
+(Tier 1) average the fewest benefits, while states with no document required (Tier 5)
+average the most.
 
 NOTABLE OUTLIERS:
-- Washington (WA): Tier 4 (Non-Strict Non-Photo) but 4 welfare benefits
-- Colorado (CO): Tier 4 (Non-Strict Non-Photo) but 2 welfare benefits
+- Washington (WA): Tier 4 (Non-Strict Non-Photo) but 4 welfare benefits for illegals
+- Colorado (CO): Tier 4 (Non-Strict Non-Photo) but 2 welfare benefits for illegals
 
 These states have weak ID requirements (affidavit option), explaining why they
-follow the liberal welfare pattern despite technically "requiring" ID.
+follow the liberal welfare-for-illegals pattern despite technically "requiring" ID.
 """
 
     narrative += """
 INTERPRETATION
 The data show a strong, consistent pattern: states that do not require voter ID
-are significantly more likely to offer expanded welfare benefits across all four
-categories examined. The relationship holds for healthcare access, food assistance,
-cash assistance, and tax credits for ITIN filers.
+are significantly more likely to offer welfare benefits to illegal immigrants across
+all four categories examined. The relationship holds for healthcare, food assistance,
+cash assistance, and tax credits (EITC for ITIN filers).
 """
 
     return narrative

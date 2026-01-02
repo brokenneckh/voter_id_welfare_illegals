@@ -8,12 +8,13 @@ States with no effective voter ID requirement offer **7.7x more welfare benefits
 
 | Benefit Category | No Effective ID (24 states) | ID Required (27 states) |
 |------------------|----------------------------|------------------------|
+| **Any benefit for illegal immigrants** | **83%** | **22%** |
 | Healthcare for illegal immigrants | 33% | **0%** |
 | Food assistance for illegal immigrants | 21% | **0%** |
 | Cash assistance for illegal immigrants | 71% | 22% |
 | EITC for illegal immigrants (ITIN filers) | 46% | **0%** |
 
-**Note:** Not a single state requiring ID verification offers healthcare, food assistance, or EITC to illegal immigrants.
+**Note:** Not a single state requiring ID verification offers healthcare, food assistance, or EITC to illegal immigrants. The only overlap is cash assistance (22% of ID-required states).
 
 ## What This Data Represents
 

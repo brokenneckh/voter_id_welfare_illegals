@@ -1,17 +1,30 @@
 # Voter ID Laws & Welfare Benefits for Illegal Immigrants
 
-Analysis and visualization of the relationship between state voter ID requirements and welfare benefit availability for illegal immigrants.
+Analysis and visualization of the relationship between state voter ID requirements and state-funded welfare benefits **specifically available to illegal immigrants**.
 
 ## Key Finding
 
-States with no effective voter ID requirement offer **7.7x more welfare benefits** on average compared to states requiring ID verification (1.7 vs 0.2 out of 4).
+States with no effective voter ID requirement offer **7.7x more welfare benefits to illegal immigrants** on average compared to states requiring ID verification (1.7 vs 0.2 out of 4).
 
-| Category | No Effective ID (24 states) | ID Required (27 states) |
-|----------|----------------------------|------------------------|
-| Healthcare | 33% | 0% |
-| Food Assistance | 21% | 0% |
-| Cash Assistance | 71% | 22% |
-| EITC (Tax Credit) | 46% | 0% |
+| Benefit Category | No Effective ID (24 states) | ID Required (27 states) |
+|------------------|----------------------------|------------------------|
+| Healthcare for illegal immigrants | 33% | **0%** |
+| Food assistance for illegal immigrants | 21% | **0%** |
+| Cash assistance for illegal immigrants | 71% | 22% |
+| EITC for illegal immigrants (ITIN filers) | 46% | **0%** |
+
+**Note:** Not a single state requiring ID verification offers healthcare, food assistance, or EITC to illegal immigrants.
+
+## What This Data Represents
+
+The welfare benefits tracked here are **state-funded programs that extend eligibility to illegal immigrants**:
+
+- **Healthcare**: State-funded health coverage for undocumented adults (federal Medicaid excludes them)
+- **Food Assistance**: State-funded food programs beyond federal SNAP (which excludes undocumented immigrants)
+- **Cash Assistance**: State-funded cash aid programs that include undocumented immigrants
+- **EITC**: State Earned Income Tax Credit available to **ITIN filers** (Individual Taxpayer Identification Numbers are used by people who cannot obtain a Social Security Number, including undocumented immigrants)
+
+A state with welfare score 0 doesn't mean it has no welfare programs—it means the state follows federal rules that exclude illegal immigrants from benefits. A state with score 4 has created state-funded alternatives that include them.
 
 ## Methodology
 
@@ -37,10 +50,16 @@ Three versions of the US map are provided:
 - **3-tier** (`state_map_3tier.png`): Strict / Non-Strict / Weak-None
 - **2-tier** (`state_map_2tier.png`): ID Required vs No Effective ID (primary analysis)
 
+Map legend:
+- **H** = Healthcare for illegal immigrants
+- **F** = Food assistance for illegal immigrants
+- **C** = Cash assistance for illegal immigrants
+- **E** = EITC for illegal immigrants (ITIN filers)
+
 ## Data Sources
 
 - **Voter ID Requirements**: National Conference of State Legislatures (NCSL)
-- **Welfare Benefits**: National Immigration Law Center (NILC) state policy maps (2023-2024)
+- **Welfare Benefits for Illegal Immigrants**: National Immigration Law Center (NILC) state policy maps (2023-2024)
 
 ## Usage
 

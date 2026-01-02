@@ -31,8 +31,8 @@ def calculate_odds_ratios(df: pd.DataFrame) -> Dict[str, Dict[str, float]]:
     """Calculate odds ratios for each benefit (No ID vs ID Required)."""
     benefit_cols = ['health', 'food', 'cash', 'eitc']
 
-    no_id = df[df['no_id_voting'] == 1]
-    id_req = df[df['no_id_voting'] == 0]
+    no_id = df[df['no_effective_id'] == 1]
+    id_req = df[df['no_effective_id'] == 0]
 
     results = {}
     for col in benefit_cols:
@@ -65,8 +65,8 @@ def calculate_odds_ratios(df: pd.DataFrame) -> Dict[str, Dict[str, float]]:
 
 def calculate_welfare_score_comparison(df: pd.DataFrame) -> Dict[str, Any]:
     """Compare welfare scores between groups."""
-    no_id = df[df['no_id_voting'] == 1]['welfare_score']
-    id_req = df[df['no_id_voting'] == 0]['welfare_score']
+    no_id = df[df['no_effective_id'] == 1]['welfare_score']
+    id_req = df[df['no_effective_id'] == 0]['welfare_score']
 
     # Mann-Whitney U test (non-parametric)
     u_stat, p_value = stats.mannwhitneyu(no_id, id_req, alternative='greater')
@@ -121,16 +121,16 @@ def generate_narrative(df: pd.DataFrame) -> str:
     odds = calculate_odds_ratios(df)
     welfare = calculate_welfare_score_comparison(df)
 
-    no_id_count = (df['no_id_voting'] == 1).sum()
-    id_req_count = (df['no_id_voting'] == 0).sum()
+    no_id_count = (df['no_effective_id'] == 1).sum()
+    id_req_count = (df['no_effective_id'] == 0).sum()
 
     # Find the most dramatic difference
     max_ratio_benefit = max(odds.keys(), key=lambda k: odds[k]['odds_ratio'])
     max_ratio = odds[max_ratio_benefit]['odds_ratio']
 
     # Calculate overall likelihood multiplier
-    no_id_avg_benefits = df[df['no_id_voting'] == 1]['welfare_score'].mean()
-    id_req_avg_benefits = df[df['no_id_voting'] == 0]['welfare_score'].mean()
+    no_id_avg_benefits = df[df['no_effective_id'] == 1]['welfare_score'].mean()
+    id_req_avg_benefits = df[df['no_effective_id'] == 0]['welfare_score'].mean()
     overall_multiplier = no_id_avg_benefits / id_req_avg_benefits if id_req_avg_benefits > 0 else float('inf')
 
     narrative = f"""VOTER ID LAWS AND WELFARE BENEFITS: KEY FINDINGS

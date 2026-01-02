@@ -43,8 +43,8 @@ def create_comparison_chart(df: pd.DataFrame, output_path: Optional[Path] = None
     odds = calculate_odds_ratios(df)
 
     # Calculate headline stats
-    no_id_avg = df[df['no_id_voting'] == 1]['welfare_score'].mean()
-    id_req_avg = df[df['no_id_voting'] == 0]['welfare_score'].mean()
+    no_id_avg = df[df['no_effective_id'] == 1]['welfare_score'].mean()
+    id_req_avg = df[df['no_effective_id'] == 0]['welfare_score'].mean()
     multiplier = no_id_avg / id_req_avg if id_req_avg > 0 else float('inf')
 
     # Create figure
@@ -68,8 +68,8 @@ def create_comparison_chart(df: pd.DataFrame, output_path: Optional[Path] = None
 
     # Create bars
     # Get actual counts
-    n_no_id = (df['no_id_voting'] == 1).sum()
-    n_id_req = (df['no_id_voting'] == 0).sum()
+    n_no_id = (df['no_effective_id'] == 1).sum()
+    n_id_req = (df['no_effective_id'] == 0).sum()
 
     bars1 = ax.bar(x - width/2, no_id_pcts, width, label=f'No ID Required ({n_no_id} states)',
                    color=no_id_color, edgecolor='white', linewidth=1.5)
@@ -161,8 +161,8 @@ def create_strip_plot(df: pd.DataFrame, output_path: Optional[Path] = None) -> g
         ))
 
     # Calculate means for annotation
-    no_id_mean = df[df['no_id_voting'] == 1]['welfare_score'].mean()
-    id_req_mean = df[df['no_id_voting'] == 0]['welfare_score'].mean()
+    no_id_mean = df[df['no_effective_id'] == 1]['welfare_score'].mean()
+    id_req_mean = df[df['no_effective_id'] == 0]['welfare_score'].mean()
 
     # Add mean lines
     fig.add_shape(type="line", x0=no_id_mean, x1=no_id_mean,
@@ -248,7 +248,7 @@ def create_choropleth_map(df: pd.DataFrame, output_path: Optional[Path] = None) 
     # Create hover text
     df_plot['hover_text'] = df_plot.apply(
         lambda r: f"<b>{r['state']}</b><br>" +
-                  f"Voter ID: {'No ID Required' if r['no_id_voting'] else 'ID Required'}<br>" +
+                  f"Voter ID: {'No ID Required' if r['no_effective_id'] else 'ID Required'}<br>" +
                   f"Welfare Benefits: {r['welfare_score']}/4<br>" +
                   f"---<br>" +
                   f"Healthcare: {'✓' if r['health'] else '✗'}<br>" +
@@ -267,7 +267,7 @@ def create_choropleth_map(df: pd.DataFrame, output_path: Optional[Path] = None) 
     # Add choropleth layer
     fig.add_trace(go.Choropleth(
         locations=df_plot['abbrev'],
-        z=df_plot['no_id_voting'],
+        z=df_plot['no_effective_id'],
         locationmode='USA-states',
         colorscale=colorscale,
         zmin=0,
@@ -288,7 +288,7 @@ def create_choropleth_map(df: pd.DataFrame, output_path: Optional[Path] = None) 
 
         lat, lon = state_coords[abbrev]
         welfare_score = int(row['welfare_score'])
-        is_no_id = row['no_id_voting'] == 1
+        is_no_id = row['no_effective_id'] == 1
 
         # Create checkmarks string
         checkmarks = '✓' * welfare_score if welfare_score > 0 else '—'
@@ -311,8 +311,8 @@ def create_choropleth_map(df: pd.DataFrame, output_path: Optional[Path] = None) 
         ))
 
     # Calculate stats for title
-    no_id_avg = df_plot[df_plot['no_id_voting'] == 1]['welfare_score'].mean()
-    id_req_avg = df_plot[df_plot['no_id_voting'] == 0]['welfare_score'].mean()
+    no_id_avg = df_plot[df_plot['no_effective_id'] == 1]['welfare_score'].mean()
+    id_req_avg = df_plot[df_plot['no_effective_id'] == 0]['welfare_score'].mean()
 
     fig.update_layout(
         title=dict(

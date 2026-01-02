@@ -22,8 +22,13 @@ def load_and_prepare(data_path: str = None) -> pd.DataFrame:
     benefit_cols = ['health', 'food', 'cash', 'eitc']
     df['welfare_score'] = df[benefit_cols].sum(axis=1)
 
-    # Human-readable group labels
-    df['voter_id_policy'] = df['no_id_voting'].map({
+    # 2-tier classification based on functional outcome (primary analysis)
+    # Tiers 4-5: No effective ID requirement (affidavit or no document)
+    # Tiers 1-3: ID verification required
+    df['no_effective_id'] = (df['id_strictness'] >= 4).astype(int)
+
+    # Human-readable group labels (using 2-tier functional classification)
+    df['voter_id_policy'] = df['no_effective_id'].map({
         1: 'No ID Required',
         0: 'ID Required'
     })

@@ -42,8 +42,8 @@ def main():
     print("\n[1/3] Loading and preparing data...")
     df = load_and_prepare()
     print(f"      Loaded {len(df)} jurisdictions")
-    print(f"      - No ID Required: {(df['no_id_voting'] == 1).sum()} states")
-    print(f"      - ID Required: {(df['no_id_voting'] == 0).sum()} states")
+    print(f"      - No Effective ID Requirement: {(df['no_effective_id'] == 1).sum()} states")
+    print(f"      - ID Verification Required: {(df['no_effective_id'] == 0).sum()} states")
 
     # Step 2: Generate statistical narrative
     print("\n[2/3] Generating statistical analysis...")
@@ -73,10 +73,10 @@ def main():
     print("KEY FINDING PREVIEW")
     print("=" * 60)
     # Print just the headline finding
-    no_id_avg = df[df['no_id_voting'] == 1]['welfare_score'].mean()
-    id_req_avg = df[df['no_id_voting'] == 0]['welfare_score'].mean()
+    no_id_avg = df[df['no_effective_id'] == 1]['welfare_score'].mean()
+    id_req_avg = df[df['no_effective_id'] == 0]['welfare_score'].mean()
     multiplier = no_id_avg / id_req_avg
-    print(f"\nStates without voter ID requirements offer {multiplier:.1f}x more")
+    print(f"\nStates with no effective ID requirement offer {multiplier:.1f}x more")
     print(f"welfare benefits on average ({no_id_avg:.1f} vs {id_req_avg:.1f} out of 4).")
 
 

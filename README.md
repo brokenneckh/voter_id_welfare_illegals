@@ -131,7 +131,6 @@ Two composite scores are calculated:
 ### Maps
 - `state_map.png` – 5-tier NCSL classification with benefit symbols
 - `state_map_2tier.png` – ID Required vs No Effective ID (primary analysis)
-- `state_map_3tier.png` – Three-tier classification
 
 ### Tables
 - `table_granular_pvalues.png` – 5-tier breakdown with logistic regression p-values

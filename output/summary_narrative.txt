@@ -1,72 +1,108 @@
 VOTER ID LAWS AND WELFARE BENEFITS FOR ILLEGAL IMMIGRANTS: KEY FINDINGS
-=======================================================
+======================================================================
 
-NOTE: All welfare benefits analyzed here are STATE-FUNDED programs that extend
-eligibility to illegal immigrants. Federal programs exclude them by law.
+METHODOLOGY NOTE
+This analysis distinguishes between different immigrant populations:
+- health_children: State covers illegal immigrant children
+- health_adults: State covers ALL illegal immigrant adults (working age)
+- health_seniors: State covers illegal immigrant seniors 65+ only
+- food: State food assistance available to illegal immigrants
+- eitc: State EITC available to ITIN filers
+
+Cash assistance was REMOVED from this analysis because research shows
+virtually no states provide direct cash to illegal immigrant working-age adults.
+Programs like California's CAPI serve legal immigrants only.
 
 SAMPLE SIZE
-- States without effective voter ID requirement: 24
-- States with voter ID requirement: 27
+- States without effective voter ID requirement (tiers 4-5): 24
+- States with voter ID requirement (tiers 1-3): 27
 
-HEADLINE FINDING
-States that allow voting without ID offer an average of 1.7 welfare
-benefits to illegal immigrants, compared to 0.2 in states requiring voter ID.
-This represents a 7.7x difference.
+======================================================================
+ANALYSIS 1: ILLEGAL IMMIGRANT ADULTS (Most Defensible)
+======================================================================
 
-BENEFIT-BY-BENEFIT COMPARISON (all benefits for illegal immigrants)
+Welfare score = health_adults + food + eitc (0-3 scale)
 
-Healthcare for illegal immigrants:
-  No ID states: 33%  |  ID required states: 0%
-  Odds ratio: 28.3x  (p = 0.0012)**
+States that allow voting without ID offer an average of 0.92 welfare
+benefits to illegal immigrant adults, compared to 0.00 in states requiring voter ID.
+ID-required states average ZERO benefits for illegal immigrant adults.
+
+Mann-Whitney U test: p = 0.0001
+Effect size (rank-biserial): -0.46
+
+======================================================================
+ANALYSIS 2: ANY ILLEGAL IMMIGRANT (Broader)
+======================================================================
+
+Welfare score = (any health coverage) + food + eitc (0-3 scale)
+
+States that allow voting without ID offer an average of 1.25 welfare
+benefits to any illegal immigrant, compared to 0.04 in states requiring voter ID.
+This represents a 33.8x difference.
+
+Mann-Whitney U test: p = 0.0000
+Effect size (rank-biserial): -0.64
+
+======================================================================
+BENEFIT-BY-BENEFIT COMPARISON
+======================================================================
+
+Healthcare for illegal immigrant adults (all ages):
+  No ID states: 25%  |  ID required states: 0%
+  Odds ratio: 19.3x  (p = 0.0075)**
+
+Healthcare for illegal immigrant children:
+  No ID states: 54%  |  ID required states: 4%
+  Odds ratio: 30.7x  (p = 0.0001)**
+
+Healthcare for illegal immigrant seniors (65+ only):
+  No ID states: 8%  |  ID required states: 0%
+  Odds ratio: 6.1x  (p = 0.2165)
 
 Food assistance for illegal immigrants:
   No ID states: 21%  |  ID required states: 0%
   Odds ratio: 15.5x  (p = 0.0181)*
 
-Cash assistance for illegal immigrants:
-  No ID states: 71%  |  ID required states: 22%
-  Odds ratio: 8.5x  (p = 0.0007)**
-
-EITC for illegal immigrants (ITIN filers):
+State EITC for ITIN filers:
   No ID states: 46%  |  ID required states: 0%
   Odds ratio: 46.9x  (p = 0.0001)**
 
 STATISTICAL NOTES
 - * p < 0.05, ** p < 0.01 (Fisher's exact test)
-- Welfare score comparison: Mann-Whitney U p = 0.0000
-- Effect size (rank-biserial): -0.71
 
-VOTER ID STRICTNESS GRADIENT
-{'=' * 55}
+======================================================================
+VOTER ID STRICTNESS GRADIENT (Adults Score)
+======================================================================
 
-The NCSL categorizes voter ID laws into 5 tiers of strictness.
-Analyzing welfare benefits for illegal immigrants across this spectrum reveals a clear gradient:
-
-Tier  Category                     States Avg Welfare 
+Tier  Category                     States Avg Score 
 -------------------------------------------------------
-1     Strict Photo ID              11     0.36
-2     Strict Non-Photo ID          2      0.50
-3     Non-Strict Photo ID          14     0.07
-4     Non-Strict Non-Photo ID      9      1.00
-5     No Document Required         15     2.13
+1     Strict Photo ID              11     0.00
+2     Strict Non-Photo ID          2      0.00
+3     Non-Strict Photo ID          14     0.00
+4     Non-Strict Non-Photo ID      9      0.56
+5     No Document Required         15     1.13
 
-Correlation (strictness tier vs welfare score): r = 0.556
-Spearman correlation: rho = 0.634 (p = 0.0000)
+Pearson correlation (strictness tier vs adults welfare score): r = 0.486
+Spearman correlation: rho = 0.571 (p = 0.0000)
 
-KEY INSIGHT: The gradient is clear - as voter ID requirements become less strict,
-welfare benefits for illegal immigrants increase. States with the strictest ID laws
-(Tier 1) average the fewest benefits, while states with no document required (Tier 5)
-average the most.
+======================================================================
+KEY TAKEAWAYS
+======================================================================
 
-NOTABLE OUTLIERS:
-- Washington (WA): Tier 4 (Non-Strict Non-Photo) but 4 welfare benefits for illegals
-- Colorado (CO): Tier 4 (Non-Strict Non-Photo) but 2 welfare benefits for illegals
+1. The correlation between weak voter ID laws and immigrant benefits PERSISTS
+   even with more rigorous methodology distinguishing populations.
 
-These states have weak ID requirements (affidavit option), explaining why they
-follow the liberal welfare-for-illegals pattern despite technically "requiring" ID.
+2. NOT A SINGLE ID-required state offers healthcare or food assistance to
+   illegal immigrant adults. The divide is stark.
 
-INTERPRETATION
-The data show a strong, consistent pattern: states that do not require voter ID
-are significantly more likely to offer welfare benefits to illegal immigrants across
-all four categories examined. The relationship holds for healthcare, food assistance,
-cash assistance, and tax credits (EITC for ITIN filers).
+3. EITC for ITIN filers shows the clearest pattern: exclusively offered by
+   states without effective voter ID requirements.
+
+4. This revised analysis addresses critiques about collapsing population
+   categories and inflating cash assistance claims.
+
+Sources:
+- Voter ID: National Conference of State Legislatures (NCSL)
+- Health coverage: KFF, NILC health coverage maps (2024)
+- Food assistance: NILC state food programs table
+- EITC: ITEP state EITC analysis (2024)

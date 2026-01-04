@@ -72,12 +72,16 @@ def main():
     print("\n" + "=" * 60)
     print("KEY FINDING PREVIEW")
     print("=" * 60)
-    # Print just the headline finding
-    no_id_avg = df[df['no_effective_id'] == 1]['welfare_score'].mean()
-    id_req_avg = df[df['no_effective_id'] == 0]['welfare_score'].mean()
-    multiplier = no_id_avg / id_req_avg
-    print(f"\nStates with no effective ID requirement offer {multiplier:.1f}x more")
-    print(f"welfare benefits on average ({no_id_avg:.1f} vs {id_req_avg:.1f} out of 4).")
+    # Print just the headline finding (adults-focused score)
+    no_id_avg = df[df['no_effective_id'] == 1]['welfare_score_adults'].mean()
+    id_req_avg = df[df['no_effective_id'] == 0]['welfare_score_adults'].mean()
+    if id_req_avg > 0:
+        multiplier = no_id_avg / id_req_avg
+        print(f"\nStates with no effective ID requirement offer {multiplier:.1f}x more")
+        print(f"welfare benefits to illegal immigrant adults ({no_id_avg:.2f} vs {id_req_avg:.2f} out of 3).")
+    else:
+        print(f"\nStates with no effective ID requirement average {no_id_avg:.2f} benefits")
+        print(f"to illegal immigrant adults. ID-required states average ZERO.")
 
 
 if __name__ == "__main__":

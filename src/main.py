@@ -25,6 +25,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from prepare_data import load_and_prepare
 from stats import generate_narrative
 from visualize import create_all_visualizations
+from high_contrast_maps import generate_all_maps
 
 
 def main():
@@ -39,14 +40,14 @@ def main():
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Step 1: Load and prepare data
-    print("\n[1/3] Loading and preparing data...")
+    print("\n[1/4] Loading and preparing data...")
     df = load_and_prepare()
     print(f"      Loaded {len(df)} jurisdictions")
     print(f"      - No Effective ID Requirement: {(df['no_effective_id'] == 1).sum()} states")
     print(f"      - ID Verification Required: {(df['no_effective_id'] == 0).sum()} states")
 
     # Step 2: Generate statistical narrative
-    print("\n[2/3] Generating statistical analysis...")
+    print("\n[2/4] Generating statistical analysis...")
     narrative = generate_narrative(df)
 
     # Save narrative
@@ -56,8 +57,12 @@ def main():
     print(f"      Saved: {narrative_path}")
 
     # Step 3: Create visualizations
-    print("\n[3/3] Creating visualizations...")
+    print("\n[3/4] Creating visualizations...")
     create_all_visualizations(df, output_dir)
+
+    # Step 4: Generate high-contrast maps
+    print("\n[4/4] Generating high-contrast maps...")
+    generate_all_maps(year=2024)
 
     # Summary
     print("\n" + "=" * 60)

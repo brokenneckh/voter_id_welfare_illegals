@@ -1,0 +1,210 @@
+benefit_county_fips,nonbenefit_county_fips,benefit_state,nonbenefit_state,benefit_county_name,nonbenefit_county_name,state_pair,border_segment_id,weight_equal,weight_neighbor_adjusted,pair_id
+06025,04012,CA,AZ,"Imperial County, CA","La Paz County, AZ",AZ-CA,1,1.0,1.0,04012_06025
+06065,04012,CA,AZ,"Riverside County, CA","La Paz County, AZ",AZ-CA,1,1.0,1.0,04012_06065
+06071,04012,CA,AZ,"San Bernardino County, CA","La Paz County, AZ",AZ-CA,1,1.0,1.0,04012_06071
+08083,04001,CO,AZ,"Montezuma County, CO","Apache County, AZ",AZ-CO,2,1.0,1.0,04001_08083
+27099,19089,MN,IA,"Mower County, MN","Howard County, IA",IA-MN,14,1.0,1.0,19089_27099
+27105,19119,MN,IA,"Nobles County, MN","Lyon County, IA",IA-MN,14,1.0,1.0,19119_27105
+24015,10003,MD,DE,"Cecil County, MD","New Castle County, DE",DE-MD,11,1.0,1.0,10003_24015
+24029,10001,MD,DE,"Kent County, MD","Kent County, DE",DE-MD,11,1.0,1.0,10001_24029
+24011,10001,MD,DE,"Caroline County, MD","Kent County, DE",DE-MD,11,1.0,1.0,10001_24011
+27047,19189,MN,IA,"Freeborn County, MN","Winnebago County, IA",IA-MN,14,1.0,1.0,19189_27047
+27031,26083,MN,MI,"Cook County, MN","Keweenaw County, MI",MI-MN,28,1.0,1.0,26083_27031
+27043,19109,MN,IA,"Faribault County, MN","Kossuth County, IA",IA-MN,14,1.0,1.0,19109_27043
+24019,10005,MD,DE,"Dorchester County, MD","Sussex County, DE",DE-MD,11,1.0,1.0,10005_24019
+24035,10001,MD,DE,"Queen Anne's County, MD","Kent County, DE",DE-MD,11,1.0,1.0,10001_24035
+24045,10005,MD,DE,"Wicomico County, MD","Sussex County, DE",DE-MD,11,1.0,1.0,10005_24045
+27045,19089,MN,IA,"Fillmore County, MN","Howard County, IA",IA-MN,14,1.0,1.0,19089_27045
+24047,10005,MD,DE,"Worcester County, MD","Sussex County, DE",DE-MD,11,1.0,1.0,10005_24047
+27133,19119,MN,IA,"Rock County, MN","Lyon County, IA",IA-MN,14,1.0,1.0,19119_27133
+27091,19063,MN,IA,"Martin County, MN","Emmet County, IA",IA-MN,14,1.0,1.0,19063_27091
+27063,19059,MN,IA,"Jackson County, MN","Dickinson County, IA",IA-MN,14,1.0,1.0,19059_27063
+27055,19005,MN,IA,"Houston County, MN","Allamakee County, IA",IA-MN,14,1.0,1.0,19005_27055
+49023,32033,UT,NV,"Juab County, UT","White Pine County, NV",NV-UT,36,1.0,1.0,32033_49023
+49021,32017,UT,NV,"Iron County, UT","Lincoln County, NV",NV-UT,36,1.0,1.0,32017_49021
+49005,16007,UT,ID,"Cache County, UT","Bear Lake County, ID",ID-UT,16,1.0,1.0,16007_49005
+49003,16031,UT,ID,"Box Elder County, UT","Cassia County, ID",ID-UT,16,1.0,1.0,16031_49003
+49037,04001,UT,AZ,"San Juan County, UT","Apache County, AZ",AZ-UT,4,1.0,1.0,04001_49037
+50005,33009,VT,NH,"Caledonia County, VT","Grafton County, NH",NH-VT,32,1.0,1.0,33009_50005
+50027,33009,VT,NH,"Windsor County, VT","Grafton County, NH",NH-VT,32,1.0,1.0,33009_50027
+50017,33009,VT,NH,"Orange County, VT","Grafton County, NH",NH-VT,32,1.0,1.0,33009_50017
+50009,33007,VT,NH,"Essex County, VT","Coos County, NH",NH-VT,32,1.0,1.0,33007_50009
+49045,32007,UT,NV,"Tooele County, UT","Elko County, NV",NV-UT,36,1.0,1.0,32007_49045
+49053,04015,UT,AZ,"Washington County, UT","Mohave County, AZ",AZ-UT,4,1.0,1.0,04015_49053
+53003,16069,WA,ID,"Asotin County, WA","Nez Perce County, ID",ID-WA,17,1.0,1.0,16069_53003
+53075,16009,WA,ID,"Whitman County, WA","Benewah County, ID",ID-WA,17,1.0,1.0,16009_53075
+53063,16009,WA,ID,"Spokane County, WA","Benewah County, ID",ID-WA,17,1.0,1.0,16009_53063
+35031,04001,NM,AZ,"McKinley County, NM","Apache County, AZ",AZ-NM,3,1.0,1.0,04001_35031
+35045,04001,NM,AZ,"San Juan County, NM","Apache County, AZ",AZ-NM,3,1.0,1.0,04001_35045
+41063,16003,OR,ID,"Wallowa County, OR","Adams County, ID",ID-OR,15,1.0,1.0,16003_41063
+41045,16027,OR,ID,"Malheur County, OR","Canyon County, ID",ID-OR,15,1.0,1.0,16027_41045
+41025,32013,OR,NV,"Harney County, OR","Humboldt County, NV",NV-OR,35,1.0,1.0,32013_41025
+41001,16003,OR,ID,"Baker County, OR","Adams County, ID",ID-OR,15,1.0,1.0,16003_41001
+34009,10001,NJ,DE,"Cape May County, NJ","Kent County, DE",DE-NJ,12,1.0,1.0,10001_34009
+34011,10001,NJ,DE,"Cumberland County, NJ","Kent County, DE",DE-NJ,12,1.0,1.0,10001_34011
+34015,10003,NJ,DE,"Gloucester County, NJ","New Castle County, DE",DE-NJ,12,1.0,1.0,10003_34015
+34033,10001,NJ,DE,"Salem County, NJ","Kent County, DE",DE-NJ,12,1.0,1.0,10001_34033
+35003,04001,NM,AZ,"Catron County, NM","Apache County, AZ",AZ-NM,3,1.0,1.0,04001_35003
+35006,04001,NM,AZ,"Cibola County, NM","Apache County, AZ",AZ-NM,3,1.0,1.0,04001_35006
+35017,04011,NM,AZ,"Grant County, NM","Greenlee County, AZ",AZ-NM,3,1.0,1.0,04011_35017
+53051,16017,WA,ID,"Pend Oreille County, WA","Bonner County, ID",ID-WA,17,1.0,1.0,16017_53051
+49001,32017,UT,NV,"Beaver County, UT","Lincoln County, NV",NV-UT,36,1.0,1.0,32017_49001
+49033,16007,UT,ID,"Rich County, UT","Bear Lake County, ID",ID-UT,16,1.0,1.0,16007_49033
+49027,32017,UT,NV,"Millard County, UT","Lincoln County, NV",NV-UT,36,1.0,1.0,32017_49027
+49025,04005,UT,AZ,"Kane County, UT","Coconino County, AZ",AZ-UT,4,1.0,1.0,04005_49025
+35023,04003,NM,AZ,"Hidalgo County, NM","Cochise County, AZ",AZ-NM,3,1.0,1.0,04003_35023
+17045,18165,IL,IN,"Edgar County, IL","Vermillion County, IN",IL-IN,18,1.0,1.0,17045_18165
+17183,18171,IL,IN,"Vermilion County, IL","Warren County, IN",IL-IN,18,1.0,1.0,17183_18171
+17015,19045,IL,IA,"Carroll County, IL","Clinton County, IA",IA-IL,13,1.0,1.0,17015_19045
+17075,18111,IL,IN,"Iroquois County, IL","Newton County, IN",IL-IN,18,1.0,1.0,17075_18111
+17031,18089,IL,IN,"Cook County, IL","Lake County, IN",IL-IN,18,1.0,1.0,17031_18089
+17033,18083,IL,IN,"Crawford County, IL","Knox County, IN",IL-IN,18,1.0,1.0,17033_18083
+17185,18051,IL,IN,"Wabash County, IL","Gibson County, IN",IL-IN,18,1.0,1.0,17185_18051
+17075,18007,IL,IN,"Iroquois County, IL","Benton County, IN",IL-IN,18,1.0,1.0,17075_18007
+17023,18153,IL,IN,"Clark County, IL","Sullivan County, IN",IL-IN,18,1.0,1.0,17023_18153
+17059,18129,IL,IN,"Gallatin County, IL","Posey County, IN",IL-IN,18,1.0,1.0,17059_18129
+17023,18167,IL,IN,"Clark County, IL","Vigo County, IN",IL-IN,18,1.0,1.0,17023_18167
+17071,19057,IL,IA,"Henderson County, IL","Des Moines County, IA",IA-IL,13,1.0,1.0,17071_19057
+17069,21055,IL,KY,"Hardin County, IL","Crittenden County, KY",IL-KY,19,1.0,1.0,17069_21055
+17069,21139,IL,KY,"Hardin County, IL","Livingston County, KY",IL-KY,19,1.0,1.0,17069_21139
+08017,20199,CO,KS,"Cheyenne County, CO","Wallace County, KS",CO-KS,6,1.0,1.0,08017_20199
+08009,20187,CO,KS,"Baca County, CO","Stanton County, KS",CO-KS,6,1.0,1.0,08009_20187
+08063,20181,CO,KS,"Kit Carson County, CO","Sherman County, KS",CO-KS,6,1.0,1.0,08063_20181
+08009,20129,CO,KS,"Baca County, CO","Morton County, KS",CO-KS,6,1.0,1.0,08009_20129
+08099,20075,CO,KS,"Prowers County, CO","Hamilton County, KS",CO-KS,6,1.0,1.0,08099_20075
+08017,20071,CO,KS,"Cheyenne County, CO","Greeley County, KS",CO-KS,6,1.0,1.0,08017_20071
+08063,20023,CO,KS,"Kit Carson County, CO","Cheyenne County, KS",CO-KS,6,1.0,1.0,08063_20023
+17003,21007,IL,KY,"Alexander County, IL","Ballard County, KY",IL-KY,19,1.0,1.0,17003_21007
+17085,19061,IL,IA,"Jo Daviess County, IL","Dubuque County, IA",IA-IL,13,1.0,1.0,17085_19061
+17161,19139,IL,IA,"Rock Island County, IL","Muscatine County, IA",IA-IL,13,1.0,1.0,17161_19139
+17015,19097,IL,IA,"Carroll County, IL","Jackson County, IA",IA-IL,13,1.0,1.0,17015_19097
+17067,19111,IL,IA,"Hancock County, IL","Lee County, IA",IA-IL,13,1.0,1.0,17067_19111
+17031,18127,IL,IN,"Cook County, IL","Porter County, IN",IL-IN,18,1.0,1.0,17031_18127
+06027,32023,CA,NV,"Inyo County, CA","Nye County, NV",CA-NV,5,1.0,1.0,06027_32023
+06051,32021,CA,NV,"Mono County, CA","Mineral County, NV",CA-NV,5,1.0,1.0,06051_32021
+06051,32019,CA,NV,"Mono County, CA","Lyon County, NV",CA-NV,5,1.0,1.0,06051_32019
+06027,32009,CA,NV,"Inyo County, CA","Esmeralda County, NV",CA-NV,5,1.0,1.0,06027_32009
+06003,32005,CA,NV,"Alpine County, CA","Douglas County, NV",CA-NV,5,1.0,1.0,06003_32005
+08095,31135,CO,NE,"Phillips County, CO","Perkins County, NE",CO-NE,7,1.0,1.0,08095_31135
+08075,31105,CO,NE,"Logan County, CO","Kimball County, NE",CO-NE,7,1.0,1.0,08075_31105
+08125,31057,CO,NE,"Yuma County, CO","Dundy County, NE",CO-NE,7,1.0,1.0,08125_31057
+08115,31049,CO,NE,"Sedgwick County, CO","Deuel County, NE",CO-NE,7,1.0,1.0,08115_31049
+08075,31033,CO,NE,"Logan County, CO","Cheyenne County, NE",CO-NE,7,1.0,1.0,08075_31033
+08095,31029,CO,NE,"Phillips County, CO","Chase County, NE",CO-NE,7,1.0,1.0,08095_31029
+17119,29510,IL,MO,"Madison County, IL","St. Louis city, MO",IL-MO,21,1.0,1.0,17119_29510
+17003,29201,IL,MO,"Alexander County, IL","Scott County, MO",IL-MO,21,1.0,1.0,17003_29201
+17119,29189,IL,MO,"Madison County, IL","St. Louis County, MO",IL-MO,21,1.0,1.0,17119_29189
+17133,29186,IL,MO,"Monroe County, IL","Ste. Genevieve County, MO",IL-MO,21,1.0,1.0,17133_29186
+17013,29183,IL,MO,"Calhoun County, IL","St. Charles County, MO",IL-MO,21,1.0,1.0,17013_29183
+17149,29173,IL,MO,"Pike County, IL","Ralls County, MO",IL-MO,21,1.0,1.0,17149_29173
+17013,29163,IL,MO,"Calhoun County, IL","Pike County, MO",IL-MO,21,1.0,1.0,17013_29163
+17077,29157,IL,MO,"Jackson County, IL","Perry County, MO",IL-MO,21,1.0,1.0,17077_29157
+17003,29133,IL,MO,"Alexander County, IL","Mississippi County, MO",IL-MO,21,1.0,1.0,17003_29133
+17001,29127,IL,MO,"Adams County, IL","Marion County, MO",IL-MO,21,1.0,1.0,17001_29127
+17013,29113,IL,MO,"Calhoun County, IL","Lincoln County, MO",IL-MO,21,1.0,1.0,17013_29113
+17001,29111,IL,MO,"Adams County, IL","Lewis County, MO",IL-MO,21,1.0,1.0,17001_29111
+17133,29099,IL,MO,"Monroe County, IL","Jefferson County, MO",IL-MO,21,1.0,1.0,17133_29099
+17067,29045,IL,MO,"Hancock County, IL","Clark County, MO",IL-MO,21,1.0,1.0,17067_29045
+17003,29031,IL,MO,"Alexander County, IL","Cape Girardeau County, MO",IL-MO,21,1.0,1.0,17003_29031
+17161,19163,IL,IA,"Rock Island County, IL","Scott County, IA",IA-IL,13,1.0,1.0,17161_19163
+17127,21145,IL,KY,"Massac County, IL","McCracken County, KY",IL-KY,19,1.0,1.0,17127_21145
+17059,21225,IL,KY,"Gallatin County, IL","Union County, KY",IL-KY,19,1.0,1.0,17059_21225
+17097,26159,IL,MI,"Lake County, IL","Van Buren County, MI",IL-MI,20,1.0,1.0,17097_26159
+17097,26005,IL,MI,"Lake County, IL","Allegan County, MI",IL-MI,20,1.0,1.0,17097_26005
+17031,26021,IL,MI,"Cook County, IL","Berrien County, MI",IL-MI,20,1.0,1.0,17031_26021
+17131,19115,IL,IA,"Mercer County, IL","Louisa County, IA",IA-IL,13,1.0,1.0,17131_19115
+34005,42017,NJ,PA,"Burlington County, NJ","Bucks County, PA",NJ-PA,33,1.0,1.0,34005_42017
+24023,42051,MD,PA,"Garrett County, MD","Fayette County, PA",MD-PA,24,1.0,1.0,24023_42051
+24021,42055,MD,PA,"Frederick County, MD","Franklin County, PA",MD-PA,24,1.0,1.0,24021_42055
+24001,42057,MD,PA,"Allegany County, MD","Fulton County, PA",MD-PA,24,1.0,1.0,24001_42057
+36013,42049,NY,PA,"Chautauqua County, NY","Erie County, PA",NY-PA,37,1.0,1.0,36013_42049
+36003,42083,NY,PA,"Allegany County, NY","McKean County, PA",NY-PA,37,1.0,1.0,36003_42083
+34037,42089,NJ,PA,"Sussex County, NJ","Monroe County, PA",NJ-PA,33,1.0,1.0,34037_42089
+34041,42095,NJ,PA,"Warren County, NJ","Northampton County, PA",NJ-PA,33,1.0,1.0,34041_42095
+34005,42101,NJ,PA,"Burlington County, NJ","Philadelphia County, PA",NJ-PA,33,1.0,1.0,34005_42101
+34037,42103,NJ,PA,"Sussex County, NJ","Pike County, PA",NJ-PA,33,1.0,1.0,34037_42103
+36003,42105,NY,PA,"Allegany County, NY","Potter County, PA",NY-PA,37,1.0,1.0,36003_42105
+24001,42111,MD,PA,"Allegany County, MD","Somerset County, PA",MD-PA,24,1.0,1.0,24001_42111
+24015,42071,MD,PA,"Cecil County, MD","Lancaster County, PA",MD-PA,24,1.0,1.0,24015_42071
+23031,33017,ME,NH,"York County, ME","Strafford County, NH",ME-NH,27,1.0,1.0,23031_33017
+23031,33015,ME,NH,"York County, ME","Rockingham County, NH",ME-NH,27,1.0,1.0,23031_33015
+06035,32031,CA,NV,"Lassen County, CA","Washoe County, NV",CA-NV,5,1.0,1.0,06035_32031
+06061,32510,CA,NV,"Placer County, CA","Carson City, NV",CA-NV,5,1.0,1.0,06061_32510
+23017,33003,ME,NH,"Oxford County, ME","Carroll County, NH",ME-NH,27,1.0,1.0,23017_33003
+25011,33005,MA,NH,"Franklin County, MA","Cheshire County, NH",MA-NH,23,1.0,1.0,25011_33005
+23017,33007,ME,NH,"Oxford County, ME","Coos County, NH",ME-NH,27,1.0,1.0,23017_33007
+25009,33011,MA,NH,"Essex County, MA","Hillsborough County, NH",MA-NH,23,1.0,1.0,25009_33011
+27027,38017,MN,ND,"Clay County, MN","Cass County, ND",MN-ND,29,1.0,1.0,27027_38017
+27089,38035,MN,ND,"Marshall County, MN","Grand Forks County, ND",MN-ND,29,1.0,1.0,27089_38035
+27089,38099,MN,ND,"Marshall County, MN","Walsh County, ND",MN-ND,29,1.0,1.0,27089_38099
+27107,38097,MN,ND,"Norman County, MN","Traill County, ND",MN-ND,29,1.0,1.0,27107_38097
+27027,38077,MN,ND,"Clay County, MN","Richland County, ND",MN-ND,29,1.0,1.0,27027_38077
+27069,38067,MN,ND,"Kittson County, MN","Pembina County, ND",MN-ND,29,1.0,1.0,27069_38067
+08009,40025,CO,OK,"Baca County, CO","Cimarron County, OK",CO-OK,8,1.0,1.0,08009_40025
+24013,42001,MD,PA,"Carroll County, MD","Adams County, PA",MD-PA,24,1.0,1.0,24013_42001
+24001,42009,MD,PA,"Allegany County, MD","Bedford County, PA",MD-PA,24,1.0,1.0,24001_42009
+36015,42015,NY,PA,"Chemung County, NY","Bradford County, PA",NY-PA,37,1.0,1.0,36015_42015
+35037,48205,NM,TX,"Quay County, NM","Hartley County, TX",NM-TX,34,1.0,1.0,35037_48205
+35025,48165,NM,TX,"Lea County, NM","Gaines County, TX",NM-TX,34,1.0,1.0,35025_48165
+35013,48141,NM,TX,"Do±a Ana County, NM","El Paso County, TX",NM-TX,34,1.0,1.0,35013_48141
+35009,48117,NM,TX,"Curry County, NM","Deaf Smith County, TX",NM-TX,34,1.0,1.0,35009_48117
+35059,48111,NM,TX,"Union County, NM","Dallam County, TX",NM-TX,34,1.0,1.0,35059_48111
+35015,48109,NM,TX,"Eddy County, NM","Culberson County, TX",NM-TX,34,1.0,1.0,35015_48109
+35025,48079,NM,TX,"Lea County, NM","Cochran County, TX",NM-TX,34,1.0,1.0,35025_48079
+35009,48017,NM,TX,"Curry County, NM","Bailey County, TX",NM-TX,34,1.0,1.0,35009_48017
+35025,48003,NM,TX,"Lea County, NM","Andrews County, TX",NM-TX,34,1.0,1.0,35025_48003
+27011,46109,MN,SD,"Big Stone County, MN","Roberts County, SD",MN-SD,30,1.0,1.0,27011_46109
+27081,46101,MN,SD,"Lincoln County, MN","Moody County, SD",MN-SD,30,1.0,1.0,27081_46101
+27011,46051,MN,SD,"Big Stone County, MN","Grant County, SD",MN-SD,30,1.0,1.0,27011_46051
+27073,46039,MN,SD,"Lac qui Parle County, MN","Deuel County, SD",MN-SD,30,1.0,1.0,27073_46039
+27081,46011,MN,SD,"Lincoln County, MN","Brookings County, SD",MN-SD,30,1.0,1.0,27081_46011
+24005,42133,MD,PA,"Baltimore County, MD","York County, PA",MD-PA,24,1.0,1.0,24005_42133
+36007,42127,NY,PA,"Broome County, NY","Wayne County, PA",NY-PA,37,1.0,1.0,36007_42127
+36009,42123,NY,PA,"Cattaraugus County, NY","Warren County, PA",NY-PA,37,1.0,1.0,36009_42123
+36015,42117,NY,PA,"Chemung County, NY","Tioga County, PA",NY-PA,37,1.0,1.0,36015_42117
+36007,42115,NY,PA,"Broome County, NY","Susquehanna County, PA",NY-PA,37,1.0,1.0,36007_42115
+35015,48301,NM,TX,"Eddy County, NM","Loving County, TX",NM-TX,34,1.0,1.0,35015_48301
+35009,48369,NM,TX,"Curry County, NM","Parmer County, TX",NM-TX,34,1.0,1.0,35009_48369
+35035,48229,NM,TX,"Otero County, NM","Hudspeth County, TX",NM-TX,34,1.0,1.0,35035_48229
+35037,48359,NM,TX,"Quay County, NM","Oldham County, TX",NM-TX,34,1.0,1.0,35037_48359
+11001,51013,DC,VA,"District of Columbia, DC","Arlington County, VA",DC-VA,10,1.0,1.0,11001_51013
+11001,51059,DC,VA,"District of Columbia, DC","Fairfax County, VA",DC-VA,10,1.0,1.0,11001_51059
+24017,51099,MD,VA,"Charles County, MD","King George County, VA",MD-VA,25,1.0,1.0,24017_51099
+24021,51107,MD,VA,"Frederick County, MD","Loudoun County, VA",MD-VA,25,1.0,1.0,24021_51107
+24037,51133,MD,VA,"St. Mary's County, MD","Northumberland County, VA",MD-VA,25,1.0,1.0,24037_51133
+35025,48495,NM,TX,"Lea County, NM","Winkler County, TX",NM-TX,34,1.0,1.0,35025_48495
+35015,48389,NM,TX,"Eddy County, NM","Reeves County, TX",NM-TX,34,1.0,1.0,35015_48389
+24039,51001,MD,VA,"Somerset County, MD","Accomack County, VA",MD-VA,25,1.0,1.0,24039_51001
+35025,48501,NM,TX,"Lea County, NM","Yoakum County, TX",NM-TX,34,1.0,1.0,35025_48501
+11001,51510,DC,VA,"District of Columbia, DC","Alexandria city, VA",DC-VA,10,1.0,1.0,11001_51510
+24017,51193,MD,VA,"Charles County, MD","Westmoreland County, VA",MD-VA,25,1.0,1.0,24017_51193
+24017,51179,MD,VA,"Charles County, MD","Stafford County, VA",MD-VA,25,1.0,1.0,24017_51179
+24017,51153,MD,VA,"Charles County, MD","Prince William County, VA",MD-VA,25,1.0,1.0,24017_51153
+24043,54003,MD,WV,"Washington County, MD","Berkeley County, WV",MD-WV,26,1.0,1.0,24043_54003
+24023,54023,MD,WV,"Garrett County, MD","Grant County, WV",MD-WV,26,1.0,1.0,24023_54023
+24001,54027,MD,WV,"Allegany County, MD","Hampshire County, WV",MD-WV,26,1.0,1.0,24001_54027
+24043,54037,MD,WV,"Washington County, MD","Jefferson County, WV",MD-WV,26,1.0,1.0,24043_54037
+24001,54057,MD,WV,"Allegany County, MD","Mineral County, WV",MD-WV,26,1.0,1.0,24001_54057
+24001,54065,MD,WV,"Allegany County, MD","Morgan County, WV",MD-WV,26,1.0,1.0,24001_54065
+24023,54077,MD,WV,"Garrett County, MD","Preston County, WV",MD-WV,26,1.0,1.0,24023_54077
+27075,55007,MN,WI,"Lake County, MN","Bayfield County, WI",MN-WI,31,1.0,1.0,27075_55007
+27157,55011,MN,WI,"Wabasha County, MN","Buffalo County, WI",MN-WI,31,1.0,1.0,27157_55011
+27025,55013,MN,WI,"Chisago County, MN","Burnett County, WI",MN-WI,31,1.0,1.0,27025_55013
+27017,55031,MN,WI,"Carlton County, MN","Douglas County, WI",MN-WI,31,1.0,1.0,27017_55031
+17085,55043,IL,WI,"Jo Daviess County, IL","Grant County, WI",IL-WI,22,1.0,1.0,17085_55043
+17177,55045,IL,WI,"Stephenson County, IL","Green County, WI",IL-WI,22,1.0,1.0,17177_55045
+17097,55059,IL,WI,"Lake County, IL","Kenosha County, WI",IL-WI,22,1.0,1.0,17097_55059
+27055,55063,MN,WI,"Houston County, MN","La Crosse County, WI",MN-WI,31,1.0,1.0,27055_55063
+17085,55065,IL,WI,"Jo Daviess County, IL","Lafayette County, WI",IL-WI,22,1.0,1.0,17085_55065
+27049,55091,MN,WI,"Goodhue County, MN","Pepin County, WI",MN-WI,31,1.0,1.0,27049_55091
+27037,55093,MN,WI,"Dakota County, MN","Pierce County, WI",MN-WI,31,1.0,1.0,27037_55093
+27025,55095,MN,WI,"Chisago County, MN","Polk County, WI",MN-WI,31,1.0,1.0,27025_55095
+17007,55105,IL,WI,"Boone County, IL","Rock County, WI",IL-WI,22,1.0,1.0,17007_55105
+27163,55109,MN,WI,"Washington County, MN","St. Croix County, WI",MN-WI,31,1.0,1.0,27163_55109
+27169,55121,MN,WI,"Winona County, MN","Trempealeau County, WI",MN-WI,31,1.0,1.0,27169_55121
+17007,55127,IL,WI,"Boone County, IL","Walworth County, WI",IL-WI,22,1.0,1.0,17007_55127
+08057,56001,CO,WY,"Jackson County, CO","Albany County, WY",CO-WY,9,1.0,1.0,08057_56001
+08057,56007,CO,WY,"Jackson County, CO","Carbon County, WY",CO-WY,9,1.0,1.0,08057_56007
+08069,56021,CO,WY,"Larimer County, CO","Laramie County, WY",CO-WY,9,1.0,1.0,08069_56021
+08081,56037,CO,WY,"Moffat County, CO","Sweetwater County, WY",CO-WY,9,1.0,1.0,08081_56037
+49033,56041,UT,WY,"Rich County, UT","Uinta County, WY",UT-WY,38,1.0,1.0,49033_56041
